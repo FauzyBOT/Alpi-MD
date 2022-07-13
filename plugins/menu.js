@@ -46,11 +46,11 @@ Hai, %ucapan %name! 👋
 
 ➪𝐌𝐚𝐦𝐩𝐢𝐫 𝐤𝐞 𝐲𝐨𝐮𝐭𝐮𝐛𝐞 𝐨𝐰𝐧𝐞𝐫
 
-https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ
+https://youtube.com/channel/UC6GPl9xMWL61NAXQb3HBrRw
 
 ➪𝐆𝐫𝐨𝐮𝐩 𝐛𝐨𝐭 𝐨𝐟𝐟𝐜𝐢𝐚𝐥
 
-https://chat.whatsapp.com/IqZke0cAG6G3iVsnB9myfL
+https://chat.whatsapp.com/L1nuhIsYNRG8FMnVFRa2Hs
 ➪*Limit:* %limit
 ➪*Level:* %level
 ➪*XP:* %exp
@@ -59,7 +59,7 @@ https://chat.whatsapp.com/IqZke0cAG6G3iVsnB9myfL
   body: ' • %cmd %islimit %isPremium',
   footer: '\n',
   after: `*Made by ♡*
-*%𝗝𝗮𝗿𝗼𝘁 𝗼𝗳𝗳𝗰* | %version
+*%KAHFI OFFICIAL🇮🇩* | %version
 ${'```%npmdesc```'}
 `,
 }
@@ -163,10 +163,10 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ', 'Website🌟', '', '', [
-      ['Donate🌟', '/donasi'],
-      ['Sewa Bot🌟', '/sewa'],
-      ['Owner🌟', '/owner']
+    conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://youtube.com/channel/UC6GPl9xMWL61NAXQb3HBrRw', 'Website🌟', '', '', [
+      ['Donate☺️', '/donasi'],
+      ['Sewa Bot🤗', '/sewa'],
+      ['Owner🇮🇩', '/owner']
     ], m)
     /*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
     let res = await fetch(url)
