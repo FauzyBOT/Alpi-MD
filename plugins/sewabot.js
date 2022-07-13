@@ -5,7 +5,7 @@ let handler = async (m, { conn }) => {
 
   let aine = '6289654360447@s.whatsapp.net'
   let a = await conn.profilePictureUrl(conn.user.jid, 'image').catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png")
-  let b = await conn.profilePictureUrl(owner[0]+'@s.whatsapp.net', 'image').catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png")
+  let b = await conn.profilePictureUrl(owner[0]+'6285380166282@s.whatsapp.net', 'image').catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png")
   let c = pickRandom([a, b])
   let d = await fetch(c).then(a => a.buffer())
   let prepare = await require('@adiwajshing/baileys').generateWAMessageFromContent(m.key.remoteJid,{listMessage:{
@@ -36,9 +36,9 @@ wa.me/${owner[0]}
   products:[{productId:'7487741964584083'}]}],
   headerImage: { productId: '7487741964584083',
   jpegThumbnail: baper },
-  businessOwnerJid: `6285850539404@s.whatsapp.net`
+  businessOwnerJid: `6285380166282@s.whatsapp.net`
   },
-  footerText: 'https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ',
+  footerText: 'https://youtube.com/channel/UC6GPl9xMWL61NAXQb3HBrRw',
   }},{})
   conn.relayMessage(prepare.key.remoteJid,prepare.message,{messageId:prepare.key.id})
   const data = global.owner.filter(([id, isCreator]) => id && isCreator)
